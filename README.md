@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# theodinproject.com's 4th project : Rails
 
-Things you may want to cover:
+Aim: Utilise rails framework to build a basic blogger platform that supports
+Article creation,modification and deletion. Comments can also be added to the articles
+The articles can also be tagged with relevant keywords
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Instructions from http://tutorials.jumpstartlab.com/projects/blogger.html,
+completed till I3 (tagging stage).
