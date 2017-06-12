@@ -1,4 +1,5 @@
 class TagsController < ApplicationController
+  before_action :require_login, only: [:destory]
   def index
     @tags = Tag.all
   end

@@ -11,12 +11,13 @@
     <%end%>
 </p>
 <p><%= @article.body %></p>
+<% if logged_in? %>
+  <%= link_to "Delete",article_path(@article),data: {confirm: "Confirm Deletion of article"},
+  method: :delete %><br />
+  <!-- method delete is used by rails to emulate HTML delete^ !-->
 
-<%= link_to "Delete",article_path(@article),data: {confirm: "Confirm Deletion of article"},
-method: :delete %><br />
-<!-- method delete is used by rails to emulate HTML delete^ !-->
-
-<%= link_to "edit", edit_article_path(@article) %><br />
+  <%= link_to "edit", edit_article_path(@article) %><br />
+<% end %>
 <%= link_to "<<Back to Articles List", articles_path %>
 <%= render partial: 'comments/form' %>
 <h3>Comments (<%= @article.comments.size %>)</h3>
